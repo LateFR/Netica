@@ -1,4 +1,4 @@
-let url_server="http://88.160.36.153:440/"
+let url_server="http://88.160.36.153:50080/"
 const url=new URL(window.location.href)
 
 
