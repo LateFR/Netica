@@ -1,4 +1,4 @@
-let url_server="http://127.0.0.1:440/"
+let url_server="http://88.160.36.153:440/"
 const url=new URL(window.location.href)
 
 
@@ -47,7 +47,7 @@ document.querySelector("#search_button").addEventListener("click",async (event)=
         return
     }
     url_server=url_server+"/?q="+param
-    history.pushState(null,"","http://127.0.0.1:5500/index.html?q="+param)
+    history.pushState(null,"","https://proto-netica.vercel.app?q="+param)
     let response=await fetch(url_server,{
         method:"POST",
         headers:{"q":param}
